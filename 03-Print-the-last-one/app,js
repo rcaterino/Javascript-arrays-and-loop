@@ -1,0 +1,15 @@
+function generateRandomArray() //función que genera un array de tamaña y contenido aleatorio
+{
+	var auxArray = [];
+	var randomLength = Math.floor(Math.random()*100);
+	for(var i = 0;i<randomLength;i++) auxArray.push(Math.floor(Math.random()*100));
+	return auxArray;	
+}
+var myStupidArray = generateRandomArray();
+// Instructions
+// Create a variable named theLastOne, and assign it the LAST element of myStupidArray.
+// Then, print it on the console.
+// Your code here
+
+var theLastOne = myStupidArray[myStupidArray.length -1] ;
+console.log(theLastOne);
